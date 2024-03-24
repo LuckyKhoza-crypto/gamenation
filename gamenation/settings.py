@@ -24,7 +24,11 @@ SECRET_KEY = 'django-insecure-&c)g3&^pu=oz$rznf2!3!=hsh*))jy8jwx**dy-$*b^@%#v(2$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                 'www.gamenation-production.up.railway.app']
+
+CRSF_TRUSTED_ORIGINS = ['https://www.gamenation-production.up.railway.app']
+
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
