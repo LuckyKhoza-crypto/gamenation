@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="container text-center mt-4 mb-4 p-4">
+    <h1>Click the button below to get your code. And RETURN to Video</h1>
+  </div>
+
+  <div class="container d-flex justify-content-center mt-4 p-4">
+    <button class="btn btn-primary text-center p-4 fs-1">
+      <p class="code_button">Get Code</p>
+    </button>
+  </div>
+
+  <script>
+    const code_button = document.querySelector('.code_button');
+
+    code_button.addEventListener('click', reveal_code);
+
+    function reveal_code() {
+      const code = '1NSQ8 2P5AF WP6R7 CQ1CW HKDP9';
+
+      document
+        .querySelector('.code_button')
+        .innerText = code;
+    }
+  </script>
+{% endblock %}
