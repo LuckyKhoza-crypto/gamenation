@@ -1,4 +1,7 @@
 asgiref==3.8.1
 Django==5.0.3
+django-browser-reload==1.12.1
+django-livereload-server==0.5.1
 sqlparse==0.4.4
+tornado==6.4
 tzdata==2024.1
