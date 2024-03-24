@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-Python --3.11.5
-=======
-python --Python 3.11.5
->>>>>>> cd7481a4c743ca0cf44e44c274abfde6b92695bc
+
+Python -3.11.5
