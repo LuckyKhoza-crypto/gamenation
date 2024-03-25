@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&c)g3&^pu=oz$rznf2!3!=hsh*))jy8jwx**dy-$*b^@%#v(2$
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 'gamenation-production.up.railway.app']
+                 'gamenation-production.up.railway.app','mygamenation.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://www.gamenation-production.up.railway.app']
 
