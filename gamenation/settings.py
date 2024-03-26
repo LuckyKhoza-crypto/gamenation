@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&c)g3&^pu=oz$rznf2!3!=hsh*))jy8jwx**dy-$*b^@%#v(2$
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 'gamenation-production.up.railway.app']
+                 'gamenation-production.up.railway.app', 'mygamenation.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://www.gamenation-production.up.railway.app']
 
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gamenationApp',
     'whitenoise.runserver_nostatic',
+    'import_export',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

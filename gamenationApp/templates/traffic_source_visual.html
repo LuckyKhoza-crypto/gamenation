@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  <div class="container text-center p-4">
+    <h1 style="color: green">Gamenation YouTube Channel Traffic Sources</h1>
+  </div>
+  <div
+    class="container bg-warning border border-success text-white p-4"
+    style="width: 75%"
+  >
+    <canvas class="myChart text-white"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+  <script>
+    var config = {
+      type: 'pie',
+      data: {
+        datasets: [
+          {
+            label:'Views by Source',
+            data: {{ y_elements | safe }},
+          backgroundColor: [
+            'red',
+            'blue',
+            'white',
+            'green',
+            'purper',
+            'yellow',
+            'pink',
+            'orange',
+
+          ],
+          hoverBorderColor:'green',
+          hoverBorderWidth:6,
+          spacing:6,
+        }],
+        labels: {{ x_elements | safe }}
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'bottom',
+        },
+
+      }
+    };
+
+    window.onload = function() {
+      var ctx = document.querySelector('.myChart').getContext('2d');
+      window.myPie = new Chart(ctx, config);
+    };
+  </script>
+</div>
+{% endblock %}
