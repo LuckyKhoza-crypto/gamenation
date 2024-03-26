@@ -82,7 +82,7 @@ class traffic_source_visual(View):
 
         traffic_data = {}
 
-        api_url = 'http://127.0.0.1:8000/api/'
+        api_url = 'https://gamenation-production.up.railway.app/api/'
 
         response = requests.get(api_url)
 
